@@ -1,1 +1,73 @@
-<html><head><link rel='stylesheet' href='css/style.css'></head><body><header><h1>PUMPHODL.ID</h1><nav><a href='academy.html'>Academy</a> <a href='analisa.html'>Analisa</a> <a href='premium.html'>Premium</a> <a href='contact.html'>Kontak</a></nav></header><main><h2>Trade Smarter. Hold Stronger.</h2><p>Landing page.</p></main><script src='js/app.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PUMPHODL.ID</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#07111f;color:#fff}
+header{position:sticky;top:0;z-index:1000;background:#0d1728;padding:15px 6%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:28px;font-weight:bold;color:#23d5ff}
+nav{display:flex;gap:20px}nav a{color:#fff;text-decoration:none}
+.menu{display:none;font-size:28px;cursor:pointer}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px;background:radial-gradient(circle at top,#14345b,#07111f)}
+h1{font-size:58px;margin-bottom:15px}.hero p{max-width:700px;opacity:.85}
+.btn{display:inline-block;margin-top:25px;padding:15px 35px;border-radius:10px;background:#23d5ff;color:#000;text-decoration:none;font-weight:bold}
+.section{padding:70px 8%}h2{text-align:center;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#12243d;padding:25px;border-radius:15px;transition:.3s}.card:hover{transform:translateY(-8px)}
+.price{font-size:36px;color:#23d5ff;margin:10px 0}
+footer{text-align:center;padding:35px;background:#0d1728}
+.fab{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none}
+@media(max-width:768px){
+.menu{display:block}
+nav{display:none;position:absolute;top:65px;left:0;right:0;background:#0d1728;flex-direction:column;padding:20px}
+nav.show{display:flex}
+h1{font-size:42px}
+}
+</style>
+</head>
+<body>
+<header><div class="logo">PUMPHODL.ID</div><div class="menu" onclick="document.querySelector('nav').classList.toggle('show')">☰</div>
+<nav>
+<a href="#home">Home</a><a href="#academy">Academy</a><a href="#premium">Premium</a><a href="#contact">Kontak</a>
+</nav></header>
+
+<section class="hero" id="home">
+<h1>Trade Smarter. Hold Stronger.</h1>
+<p>Platform edukasi crypto Indonesia untuk trader dan investor modern.</p>
+<a class="btn" href="#premium">Gabung Sekarang</a>
+</section>
+
+<section class="section" id="academy">
+<h2>Academy</h2>
+<div class="grid">
+<div class="card"><h3>📈 Analisa Harian</h3><p>Bitcoin, Ethereum, Altcoin.</p></div>
+<div class="card"><h3>🔥 Signal</h3><p>Entry, SL, TP.</p></div>
+<div class="card"><h3>🎓 Video Course</h3><p>Dari dasar hingga advance.</p></div>
+<div class="card"><h3>👥 Komunitas VIP</h3><p>Diskusi & mentoring.</p></div>
+</div></section>
+
+<section class="section" id="premium">
+<h2>Membership</h2>
+<div class="grid">
+<div class="card"><h3>Free</h3><div class="price">Rp0</div></div>
+<div class="card"><h3>Pro</h3><div class="price">Rp299K</div></div>
+<div class="card"><h3>VIP</h3><div class="price">Rp999K</div></div>
+</div></section>
+
+<section class="section" id="contact">
+<h2>Hubungi Kami</h2>
+<div class="card">
+<form>
+<input style="width:100%;padding:12px;margin:8px 0" placeholder="Nama">
+<input style="width:100%;padding:12px;margin:8px 0" placeholder="Email">
+<textarea style="width:100%;padding:12px;height:120px;margin:8px 0" placeholder="Pesan"></textarea>
+<button class="btn" type="button">Kirim</button>
+</form>
+</div></section>
+
+<footer>©2026 PUMPHODL.ID • Trade • Learn • Grow</footer>
+<a class="fab" href="#">WA</a>
+</body></html>
